@@ -27,7 +27,7 @@ Please read this [Microsoft doc](https://docs.microsoft.com/en-us/azure/devops/p
    > bash ./create-Multipass.K3s.sh
    ```
    This creates 3 VMs with Ubuntu installed.   
-   Ubuntu VM `node1` is k3s server, `node2` and `node3` are the      additional joined worker.
+   Ubuntu VM `node1` is k3s server, `node2` and `node3` are the additional joined worker.
 
 - the output contains an "**export**" Statement for **KUBECONFIG**; copy and paste and run
 - create a **.env** file in **k3s** folder; either with VSCode: `code .`, `nano .env` or what favorit editor you like to.
@@ -53,3 +53,5 @@ Please read this [Microsoft doc](https://docs.microsoft.com/en-us/azure/devops/p
     kubectl logs -lapp=azp-agent -f
     ```
 - the option `-f` means "follow" and keeps the log stream open. With that you can run a build and see, whats going on with the build agent.
+
+*** The whole process can be reviewed in this [video](https://youtu.be/j8xQblDK2L0) ***
